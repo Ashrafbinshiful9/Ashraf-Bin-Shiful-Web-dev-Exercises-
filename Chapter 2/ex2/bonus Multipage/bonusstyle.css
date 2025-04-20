@@ -1,0 +1,106 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif; /* Basic font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333; /* Dark text color */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #d32f2f; /* Red background */
+    padding: 15px; /* Padding for navbar */
+    text-align: center; /* Center text */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar li {
+    display: inline; /* Inline list items */
+    margin: 0 20px; /* Space between items */
+}
+
+.navbar a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #ffd54f; /* Change color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px; /* Padding for main content */
+    max-width: 900px; /* Max width for content */
+    margin: auto; /* Center content */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px; /* Space between sections */
+    padding: 20px; /* Padding inside sections */
+    border: 1px solid #d32f2f; /* Red border */
+    border-radius: 8px; /* Rounded corners for sections */
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center; /* Centered headings */
+    color: #d32f2f; /* Red color for headings */
+}
+
+/* Character Cards */
+.characters-grid {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between cards */
+}
+
+.character-card {
+    background-color: #ffe0b2; /* Light orange background for cards */
+    border: 2px solid #fbc02d; /* Yellow border */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 15px; /* Padding inside cards */
+    width: 220px; /* Fixed width for cards */
+    text-align: center; /* Center text in cards */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.character-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.character-card img {
+    width: 100%; /* Full width images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar li {
+        display: block; /* Stack items vertically on small screens */
+        margin: 5px 0; /* Space between items */
+    }
+
+    .characters-grid {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .character-card {
+        width: 90%; /* Full width on small screens */
+    }
+}

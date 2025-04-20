@@ -1,0 +1,106 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffefc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #c62828;
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd54f;
+}
+
+/* Sections */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h1,
+section h2 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Character Cards */
+.characters-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.character-card {
+    background-color: #fff3e0;
+    border: 2px solid #fbc02d;
+    border-radius: 16px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.character-card:hover {
+    transform: scale(1.03);
+}
+
+.character-card h3 {
+    margin-top: 0;
+    color: #e53935;
+}
+
+.char-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Reviews Section */
+#reviews ul {
+    padding-left: 20px;
+}
+
+#reviews li {
+    margin-bottom: 8px;
+}

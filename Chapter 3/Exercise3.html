@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #1a1a1a; /* Dark background */
+      color: #f0f0f0; /* Light text color for contrast */
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex; /* Use Flexbox for layout */
+      justify-content: center; /* Center the images */
+      flex-wrap: nowrap; /* Prevent wrapping */
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    img {
+      width: 300px; /* Set image width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px;
+      transition: transform 0.4s;
+      margin: 0 15px; /* Add margin for spacing */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    }
+
+    img:hover {
+      transform: scale(1.05) translateY(-8px);
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.5); /* Highlight on hover */
+    }
+
+    .info {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .info a {
+      color: #ffcc00; /* Gold color for links */
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exercise 3</h1>
+
+  <div class="gallery">
+    <div>
+      <img src="https://images.unsplash.com/photo-1554139844-af2fc8ad3a3a?q=80&w=1974&auto=format&fit=crop" alt="Morning Run">
+      <p class="info">
+        <a href="https://unsplash.com/photos/XuD3bC_9nFA" target="_blank">© Joseph Gonzalez</a>
+      </p>
+    </div>
+
+    <div>
+      <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1974&auto=format&fit=crop" alt="Pull-up Workout">
+      <p class="info">
+        <a href="https://unsplash.com/photos/W5ZASbAM7y8" target="_blank">© Brooke Lark</a>
+      </p>
+    </div>
+
+    <div>
+      <img src="https://images.unsplash.com/photo-1547357812-4a336d835928?q=80&w=1974&auto=format&fit=crop" alt="Guitar Practice">
+      <p class="info">
+        <a href="https://unsplash.com/photos/KMn4VEeEPR8" target="_blank">© Gabriel Gurrola</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
